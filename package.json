@@ -2,11 +2,12 @@
   "name": "movies-finder-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://react-movie-finder.surge.sh",
+  "homepage": "https://Adarsh857.github.io/movie-app",
   "dependencies": {
     "antd": "^2.13.6",
     "axios": "^0.16.2",
     "flow": "^0.2.3",
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -18,6 +19,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+   
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "typecheck": "flow check src"
